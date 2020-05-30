@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Baymax</title>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./javascripts/ibmWatson.js"></script>  
+        <script src="./javascripts/sensores.js"></script> 
+        <script>
+            $(document).ready(function() {
+                var x
+
+                x = setInterval(receberValores, 10000)
+            })
+        </script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="title" href="index.html">Baymax</a>
+            <a class="links" href="contato.html">Contato</a>
+            <a class="links" href="sobre.html">Sobre</a>
+            <a class="links" href="index.html">Home</a>
+        </div>
+        <div class="wallpaper">
+            <img src="images/wallpaper.png" width="100%">
+        </div>
+        <div id="chatbot">
+            <div id="chat"></div>
+            <br>
+            <form id="centerize" name="chatForm" method="post">
+                <input id="textIn" type="text" size="100px" name="textMessage"/>
+                <input id="send" type="button" onclick="sendMessageToAssistant()" value="Enviar"/>
+            </form>
+            <br>
+        </div>
+        <div class="monitoramento">
+            <table>
+                <tr>
+                    <th>Temperatura</th>
+                    <th>Nível de Umidade</th>
+                    <th>Nível de CO2</th>
+                </tr>
+                <tr>
+                    <td id="temperatura"></td>
+                    <td id="umidade"></td>
+                    <td id="co2"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
