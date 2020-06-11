@@ -6,9 +6,9 @@ const routes = express.Router()
 var config = 
 {
     host: 'sql10.freemysqlhosting.net', //servidor do banco mysql (server name do serviço)
-    user: 'sql10345670', //usuario (server adm login name do serviço)
-    password: '5Wnirp6cu9', //senha do servidor configurada no serviço
-    database: 'sql10345670', //nome da base de dados (esquema criado)
+    user: 'sql10347665', //usuario (server adm login name do serviço)
+    password: 'vUqPUZqUpn', //senha do servidor configurada no serviço
+    database: 'sql10347665', //nome da base de dados (esquema criado)
     port: 3306 //porta do mysql, normalmente 3306
 }
 
